@@ -23,11 +23,12 @@ function getPizzaMenu() {
 }
 
 function buildMenuPage() {
-    const contentDiv = document.querySelector('.content');
+    const menuDiv = document.createElement('div');
+    menuDiv.classList.add('menu');
 
-    contentDiv.appendChild(getPizzaMenu());
+    menuDiv.appendChild(getPizzaMenu());
 
-    return contentDiv;
+    return menuDiv;
 }
 
 export default buildMenuPage;

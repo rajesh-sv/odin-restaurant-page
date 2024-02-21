@@ -31,14 +31,15 @@ function getAddress() {
 }
 
 function buildContactPage() {
-    const contentDiv = document.querySelector('.content');
+    const contactDiv = document.createElement('div');
+    contactDiv.classList.add('contact');
 
-    contentDiv.appendChild(getContactText());
-    contentDiv.appendChild(getPhoneNumber());
-    contentDiv.appendChild(getEmail());
-    contentDiv.appendChild(getAddress());
+    contactDiv.appendChild(getContactText());
+    contactDiv.appendChild(getPhoneNumber());
+    contactDiv.appendChild(getEmail());
+    contactDiv.appendChild(getAddress());
 
-    return contentDiv;
+    return contactDiv;
 }
 
 export default buildContactPage;

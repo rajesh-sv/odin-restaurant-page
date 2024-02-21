@@ -26,13 +26,14 @@ function getHeroSubtext() {
 }
 
 function buildHomePage() {
-    const contentDiv = document.querySelector('.content');
+    const homeDiv = document.createElement('div');
+    homeDiv.classList.add('home');
     
-    contentDiv.appendChild(getPizzeriaImage());
-    contentDiv.appendChild(getHeroText());
-    contentDiv.appendChild(getHeroSubtext());
+    homeDiv.appendChild(getPizzeriaImage());
+    homeDiv.appendChild(getHeroText());
+    homeDiv.appendChild(getHeroSubtext());
 
-    return contentDiv;
+    return homeDiv;
 }
 
 export default buildHomePage;
