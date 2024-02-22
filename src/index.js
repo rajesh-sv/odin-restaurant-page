@@ -8,6 +8,7 @@ function PageHandler() {
 
     function WindowOnLoad() {
         pageButtons.forEach((pageButton) => {
+            pageButton.classList.add('button');
             pageButton.addEventListener('click', (event) => swapPage(event));
         });
 
